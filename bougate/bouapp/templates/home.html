@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+User dashboard
+{% endblock title %}
+
+<!--logout button in the nav-->
+{% block logout_button %}
+  <form class="container-fluid justify-content-start">
+    <button class="btn btn-outline-danger me-2" type="button">Logout</button>
+  </form>
+
+{% endblock logout_button %}
+{% block content %}
+<div class="title">
+    <h2 class="text-center">Welcome to the User Dashboard</h2>
+</div>
+<div class="row text-center">
+    <div class="col-md-2"></div>
+
+    <div class="col-md-4 p-5">
+        <button class="btn btn-info p-5">Register People</button>
+    </div>
+    <div class="col-md-4 p-5">
+        <button class="btn btn-primary p-5">Register Property</button>
+    </div>
+    <div class="col-md-2 "></div>
+</div>
+{% endblock content %}
